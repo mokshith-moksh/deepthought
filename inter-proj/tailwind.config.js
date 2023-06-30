@@ -9,7 +9,8 @@ export default {
       colors: {
         customGray: '#F0F0F0',
         blue:'#3683F0',
-        darkblue:'#0029FF'
+        darkblue:'#0029FF',
+        headgray:'#E9ECEF',
       },
     },
   },

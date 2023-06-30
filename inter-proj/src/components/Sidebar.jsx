@@ -10,16 +10,12 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
+    <div className="fixed">
       <div
-        className={` z-10 bg-white w-${
-          expanded ? "80" : "32"
-        } h-screen shadow-lg transition-all duration-1000`}
+        className={` absolute z-10 bg-white w-${expanded ? "80" : "32"} h-screen shadow-2xl `}
       >
         <div
-          className="z-10 bg-black h-16 
-    
-         flex justify-end"
+          className="z-10 bg-black h-16 flex justify-end"
         >
           <div>
             {expanded ? (

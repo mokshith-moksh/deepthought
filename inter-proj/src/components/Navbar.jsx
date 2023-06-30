@@ -9,8 +9,8 @@ import Menu from "../assets/Menu.png";
 
 const Navbar = () => {
   return (
-    <div className="relative flex justify-between items-center w-full h-20 px-4 text-white bg-customGray shadow-xl text-opacity-25 bg-opacity-25">
-      <nav className=" flex justify-between items-center w-11/12 mx-auto h-20 px-4 text-white z-20  ">
+    <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-customGray shadow-xl text-opacity-25 bg-opacity-25  ">
+      <nav className=" fixed w-screen bg-white flex justify-between items-center h-20 px-5 text-white z-20  ">
         {/* logos */}
         <div>
           <a href="/">
