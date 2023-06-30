@@ -38,7 +38,7 @@ const StoryBoard = () => {
   ];
 
   return (
-    <div className="relative flex flex-col ml-44">
+    <div className=" flex flex-col ml-64">
       <div className="flex justify-between ">
         <h1 className="text-3xl text-darkblue font-bold mt-6">
           Technical Project Management
@@ -57,13 +57,13 @@ const StoryBoard = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 ">
         {cards.map((card) => (
           <Cards key={card.id} head={card.head} des={card.des} img={card.img} />
         ))}
       </div>
 
-      
+      <div>Notice Board</div>
     </div>
   );
 };
