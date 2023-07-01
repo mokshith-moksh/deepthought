@@ -3,9 +3,9 @@ import { GrAdd } from 'react-icons/gr';
 
 const NoticeBoard = () => {
   return (
-    <div className="fixed right-0 top-0 bg-black my-20 rounded-tl-lg rounded-tb-lg h-96 w-20 flex flex-col items-center justify-center">
-           <p className="text-rotate text-white text-lg font-semibold tracking-wider">
-           <GrAdd />
+    <div className="fixed right-0 top-0 bg-black my-20 rounded-tl-lg rounded-tb-lg h-96 w-20 flex flex-col items-center justify-center transition-all duration-300 ease-in-out">
+      <p className="text-rotate text-white text-lg font-semibold tracking-wider">
+        <GrAdd />
       </p>
       <br />
       <p className="text-rotate text-white text-md font-semibold tracking-wider">
@@ -42,7 +42,6 @@ const NoticeBoard = () => {
       <p className="text-rotate text-white text-md font-semibold tracking-wider">
         d
       </p>
-     
     </div>
   );
 };

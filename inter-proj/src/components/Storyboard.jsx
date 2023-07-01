@@ -38,32 +38,30 @@ const StoryBoard = () => {
   ];
 
   return (
-    <div className=" flex flex-col ml-64">
+    <div className="flex flex-col ml-64">
       <div className="flex justify-between ">
         <h1 className="text-3xl text-darkblue font-bold mt-6">
           Technical Project Management
         </h1>
-        <button className="fixed translate-x-[1500px] bg-darkblue px-6 py-3 my-2 text-white rounded-lg">
+        <button className="fixed translate-x-[1500px] z-10 bg-darkblue px-6 py-3 my-2 text-white rounded-lg">
           submit task
         </button>
       </div>
 
-      <div>
+      <div className="my-8 sm:my-10 md:my-12 lg:my-16 xl:my-20">
         {para.map((params) => (
-          <div key={params.id} className="my-20 bg-headgray p-6 rounded-lg">
+          <div key={params.id} className="bg-headgray p-6 rounded-lg">
             <h1 className="font-bold my-2">{params.head}</h1>
             <p>{params.sen}</p>
           </div>
         ))}
       </div>
 
-      <div className="grid grid-cols-2 ">
+      <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 w-11/12 ">
         {cards.map((card) => (
           <Cards key={card.id} head={card.head} des={card.des} img={card.img} />
         ))}
       </div>
-
-      <div>Notice Board</div>
     </div>
   );
 };

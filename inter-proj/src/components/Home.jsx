@@ -12,17 +12,29 @@ const Home = () => {
     <div>
       <Navbar />
       {/* slider */}
-      <div className="flex">
+      <div className="flex flex-col md:flex-row">
         <Sidebar />
         <StoryBoard />
         <NoticeBoard />
 
-        <div className="flex flex-col -translate-x-7 translate-y-96 my-72 ">
-          <img src={question} alt="" className="bg-darkblue p-2 rounded-lg cursor-pointer" />
+        <div className="flex flex-col md:relative -translate-x-7 translate-y-96 my-72 ">
+          <img
+            src={question}
+            alt=""
+            className="bg-darkblue p-2 rounded-lg cursor-pointer"
+          />
           <br />
-          <img src={meeting} alt="" className="bg-darkblue p-2 rounded-lg cursor-pointer " />
+          <img
+            src={meeting}
+            alt=""
+            className="bg-darkblue p-2 rounded-lg cursor-pointer "
+          />
           <br />
-          <img src={schedule} alt="" className="bg-darkblue p-2 rounded-lg cursor-pointer" />
+          <img
+            src={schedule}
+            alt=""
+            className="bg-darkblue p-2 rounded-lg cursor-pointer"
+          />
         </div>
       </div>
     </div>

@@ -12,11 +12,9 @@ const Sidebar = () => {
   return (
     <div className="fixed">
       <div
-        className={` z-10 bg-white w-${expanded ? "96" : "58"} h-screen shadow-2xl `}
+        className={`z-10 bg-white w-${expanded ? "96" : "58"} h-screen shadow-2xl transition-all duration-300 ease-in-out sm:mx-4`}
       >
-        <div
-          className="z-10 bg-black h-16  flex justify-end"
-        >
+        <div className="z-10 bg-black h-16 flex justify-end">
           <div>
             {expanded ? (
               <FaTimes
